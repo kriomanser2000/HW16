@@ -1,0 +1,108 @@
+body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    background: url(/images/bg.jpg);
+    margin: 0;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+}
+.spBG
+{
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    width: 50%;
+    max-height: 80%;
+    overflow-y: auto;
+    background: whitesmoke;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.container
+{
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    flex: 1; 
+}
+
+form 
+{
+    margin-bottom: 20px;
+}
+input[type="text"], select 
+{
+    width: 60%;
+    padding: 8px;
+    margin-right: 10px;
+}
+button 
+{
+    padding: 8px 16px;
+    cursor: pointer;
+    background: #193364;
+    color: aliceblue;
+    border: 2px solid #193364;
+    border-radius: 5px;
+}
+#movies-list 
+{
+    margin-bottom: 20px;
+}
+.movie-item 
+{
+    border-bottom: 1px solid #ccc;
+    padding: 10px 0;
+}
+.movie-item:last-child 
+{
+    border-bottom: none;
+}
+.movie-title 
+{
+    font-weight: bold;
+    cursor: pointer;
+}
+#pagination 
+{
+    text-align: center;
+}
+.pagination-button 
+{
+    margin: 0 5px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+#search-form 
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+#search-form h1 
+{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+#search-form input[type="text"],
+#search-form select,
+#search-form button 
+{
+    margin: 5px;
+    padding: 8px 16px;
+}
+#search-form input[type="text"],
+#search-form select 
+{
+    flex: 1;
+    width: auto;
+}
+#search-form button 
+{
+    flex: 0;
+}
